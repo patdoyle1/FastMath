@@ -1,6 +1,12 @@
 Wolfram Alpha todo list:
---> get an AppID from products.wolframalpha.com/api in order to be able to query the server
+--> (DONE) get an AppID from products.wolframalpha.com/api in order to be able to query the server
 --> learn the format of wolfram alpha output from documentation (refer to link below)
 
+
+NOTE: we now have an AppID, which is:
+
+	642Q4J-E5E9RP93XH 
+
+This id must be used when querying the wolfram alpha site, otherwise they will not send any results (bad)
 
 wolfram alpha documentation link:  http://products.wolframalpha.com/api/documentation.html
