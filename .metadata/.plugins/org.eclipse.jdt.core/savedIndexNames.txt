@@ -1,9 +1,0 @@
-INDEX VERSION 1.126+/Users/Paul/Documents/Development/FastMath/FastMath/.metadata/.plugins/org.eclipse.jdt.core
-4284721804.index
-3145315481.index
-321702644.index
-657403379.index
-3735875275.index
-2446358896.index
-720287245.index
-1542256292.index
