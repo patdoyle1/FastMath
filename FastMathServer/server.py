@@ -27,9 +27,8 @@ if __name__ == "__main__":
 	question = parse_question(question)
 	client = wolframalpha.Client(app_id) 
 	res = client.query(question) # send query to wolfram 
-	#print(parse_output(res, question)) # prints the final output to the question (alternatives avalible, but for debugging we'll stick with this)
-	for pod in res:
-		print pod.text
+	print(parse_output(res, question)) # prints the final output to the question (alternatives avalible, but for debugging we'll stick with this)
+	
 	
 	
 
