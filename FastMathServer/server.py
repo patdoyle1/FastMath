@@ -19,8 +19,8 @@ def parse_output(res, question):
 		foundAns = True
 
 if __name__ == "__main__":
-	imageInputFileName = "image-tests\\testMultiply.PNG"
-	tesseractQuery = 'Tesseract-OCR\\tesseract.exe ' + imageInputFileName + ' input' # this command will be different for macs and unix systems
+	imageInputFileName = "image-tests\\testMultiply.PNG" # this command will be different for macs and unix systems
+	tesseractQuery = 'Tesseract-OCR\\tesseract.exe ' + imageInputFileName + ' input' # this command will also be different for macs and unix systems
 	os.system(tesseractQuery) # send command to terminal 
 	inputFileName = "input.txt" # name of file which holds the query in text form 
 	question = open(inputFileName).readline().strip()
