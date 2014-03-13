@@ -3,4 +3,8 @@ Copy 'wolframalpha' directory into your python library
 mine was located at:
 /Library/Python/2.7/site-packages
 
+
 Also, tesseract must be installed on your system. It can be easily installed via homebrew.
+
+NOTE: Tesseract has to already be installed in order to use test.py, and the command must be different 
+	for macs than the ones used for windows
