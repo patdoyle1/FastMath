@@ -15,7 +15,10 @@ Current status
 
 —> Integration of OCR (done)
 -> WA API (done)
--> Socket server with above features (almost done)
+-> Socket server with above features (almost done) — NO LONGER USING
+
+—> Set up a django framework (Pat currently working on)
+
 -> Application (in progress)
 -> Connect to glass (not done)
 
