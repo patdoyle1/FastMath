@@ -20,9 +20,17 @@ def hello():
 def makequery():
     #query_string = request.query_string
     client = wolframalpha.Client(app_id)
-    res = client.query('derive x^2')
-    for pod in res.pods:
-        return(pod.text)
+    thequery = "derive x^2"
+    res = client.query(thequery)
+    deriv = "deriv"
+    integral = "integr"
+    if deriv in thequery or integral in thequery:
+	for pod in res.pods:
+	    return(pod.text)
+    else:   
+	return(next(res.results).text)
+
+
     #return(next(res.results).text)
 @app.errorhandler(404)
 def page_not_found(e):
