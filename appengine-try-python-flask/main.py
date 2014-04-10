@@ -1,4 +1,5 @@
 from flask import Flask
+from flask import request
 app = Flask(__name__)
 app.config['DEBUG'] = True
 from wolframrequest import wolfram
@@ -17,9 +18,12 @@ def hello():
 
 @app.route('/')
 def makequery():
+    #query_string = request.query_string
     client = wolframalpha.Client(app_id)
-    res = client.query('2+2')
-    return(next(res.results).text)
+    res = client.query('derive x^2')
+    for pod in res.pods:
+        return(pod.text)
+    #return(next(res.results).text)
 @app.errorhandler(404)
 def page_not_found(e):
     """Return a custom 404 error."""
